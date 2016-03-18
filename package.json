@@ -1,5 +1,6 @@
 {
   "name" : "gulp-s3upload",
+  "version" : "0.0.1",
   "dependencies": {
     "aws-sdk": "^2.2.9",
     "gulp": "^3.9.0",
