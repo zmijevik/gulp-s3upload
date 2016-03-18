@@ -32,7 +32,8 @@ var getType = function getType(ext) {
 var gulpS3Upload = function gulpS3Upload(params) {
   var options = {
     root: '.',
-    bucketName: 'gulps3'
+    bucketName: 'gulps3',
+    ContentEncoding : ''
   };
 
   if (typeof params === 'object') {
@@ -71,14 +72,14 @@ var gulpS3Upload = function gulpS3Upload(params) {
       Bucket: options.bucketName,
       Key: key,
       ContentType: getType(ext),
-      Body: stream.contents
+      Body: stream.contents,
+      ContentEncoding : options.ContentEncoding
     };
 
     s3.deleteObject({
         Bucket: options.bucketName,
         Key: key
       }, function(err, data) {
-        console.log(err, data);
         if (err)
           return err;
 
