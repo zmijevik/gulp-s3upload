@@ -109,7 +109,17 @@ var gulpS3Upload = function gulpS3Upload(params) {
     this.push(file);
     upload(file, cb);
   });
-  return stream;
+
+  var getConfigItem = function(configKey) {
+    return awsconfig[configKey];
+  }
+
+  return {
+    getStream: function() {
+      return stream
+    },
+    getConfigItem: getConfigItem
+  }
 };
 
 module.exports = gulpS3Upload;

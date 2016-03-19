@@ -1,12 +1,54 @@
 {
-  "name" : "gulp-s3upload",
-  "version" : "0.0.1",
+  "_args": [
+    [
+      "gulp-s3upload@git+https://github.com/imdwit/gulp-s3upload.git",
+      "/vagrant/gbfrontend"
+    ]
+  ],
+  "_from": "git+https://github.com/imdwit/gulp-s3upload.git",
+  "_id": "gulp-s3upload@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/gulp-s3upload",
+  "_phantomChildren": {
+    "readable-stream": "2.0.6",
+    "xtend": "4.0.1"
+  },
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/imdwit/gulp-s3upload/master/package.json",
+      "gitUrl": "git://github.com/imdwit/gulp-s3upload.git",
+      "httpsUrl": "git+https://github.com/imdwit/gulp-s3upload.git",
+      "shortcut": "github:imdwit/gulp-s3upload",
+      "ssh": "git@github.com:imdwit/gulp-s3upload.git",
+      "sshUrl": "git+ssh://git@github.com/imdwit/gulp-s3upload.git",
+      "type": "github"
+    },
+    "name": "gulp-s3upload",
+    "raw": "gulp-s3upload@git+https://github.com/imdwit/gulp-s3upload.git",
+    "rawSpec": "git+https://github.com/imdwit/gulp-s3upload.git",
+    "scope": null,
+    "spec": "git+https://github.com/imdwit/gulp-s3upload.git",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "git+https://github.com/imdwit/gulp-s3upload.git#03d88cb8b445c9090ff52c51863e6e6089b0f7eb",
+  "_shasum": "b211132d0cbc9b7fc884fdb6858ec8c06cdb7875",
+  "_shrinkwrap": null,
+  "_spec": "gulp-s3upload@git+https://github.com/imdwit/gulp-s3upload.git",
+  "_where": "/vagrant/gbfrontend",
   "dependencies": {
     "aws-sdk": "^2.2.9",
     "gulp": "^3.9.0",
-    "through2": "^2.0.0",
-    "gulp-util": "^3.0.6"
+    "gulp-util": "^3.0.6",
+    "through2": "^2.0.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {},
+  "gitHead": "03d88cb8b445c9090ff52c51863e6e6089b0f7eb",
+  "name": "gulp-s3upload",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "version": "0.0.1"
 }
